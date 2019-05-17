@@ -11,49 +11,89 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="cart">Корзина</li>
+          <li class="cart">
+            <a class="cart-link" href="cart.html">Корзина</a>
+          </li>
         </ul>
       </nav>
       <p>Магазин готовых шаблонов</p>
     </header>
 
     <main class="container">
+
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <ul class="filters-list">
-          <li class="filters-item">
-            <h3>Стоимость:</h3>
-            <p class="filters-item-price">От До</p>
-          </li>
-          <li class="filters-item">
-            <h3>Сетка:</h3>
-            <p class="filters-item-mesh">Адаптивная</p>
-            <p class="filters-item-mesh">Фиксированная</p>
-            <p class="filters-item-mesh">Резиновая</p>
-          </li>
-          <li class="filters-item">
-              <h3>Особенности:</h3>
-              <p class="filters-item-features">Слайдер</p>
-              <p class="filters-item-features">Блок преимуществ</p>
-              <p class="filters-item-features">Новости</p>
-              <p class="filters-item-features">Галерея</p>
-              <p class="filters-item-features">Корзина</p>
-              <a class="button">Показать</a>
-          </li>
-          <li class="filters-item">
-            <h3>Сортировать:</h3>
-            <p class="filters-item-sort">По цене</p>
-            <p class="filters-item-sort">По типу</p>
-            <p class="filters-item-sort">По названию</p>
-          </li>
-        </ul>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <ul class="filters-list">
+            <li class="filters-item">
+              <h3>Стоимость:</h3>
+              <p class="filters-item-price">От До</p>
+            </li>
+          </ul>
+
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="mesh" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="mesh" value="fixed" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="mesh" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefits" id="filter-benefits">
+                <label for="filter-benefits">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <ul>
+            <li class="filters-item">
+              <h3>Сортировать:</h3>
+              <p class="filters-item-sort">По цене</p>
+              <p class="filters-item-sort">По типу</p>
+              <p class="filters-item-sort">По названию</p>
+            </li>
+          </ul>
+          <button type="submit" class="filter-button button">
+            Показать
+          </button>
+        </form>
       </section>
 
       <section class="catalog">
@@ -132,7 +172,7 @@
     <footer class="main-footer">
       <section class="footer-maps">
         <h2 class="visually-hidden">Как нас найти?</h2>
-        <img src="img/maps.jpg" width="1440" height="416" alt="Как нас найти?">
+        <img src="img/maps.jpg" width="1440" height="416" alt="Офис компании по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </section>
       <section class="footer-contacts">
         <h2>NЁRDS DESIGN STUDIO</h2>
@@ -153,6 +193,29 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+
+    <section class="modal">
+      <h2>Напишите нам</h2>
+      <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>Ваше имя:
+            <input class="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label>Ваше e-mail:
+            <input class="feedback-email" type="text" name="e-mail" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>Текст письма:
+            <input class="feedback-text" type="text" name="text" placeholder="В свободной форме">
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
 
   </body>
 </html>
