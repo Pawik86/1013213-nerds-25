@@ -31,12 +31,11 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <ul class="filters-list">
-            <li class="filters-item">
-              <h3>Стоимость:</h3>
-              <p class="filters-item-price">От До</p>
-            </li>
-          </ul>
+          <fieldset>
+            <label for="cost-of">Стоимость</label>
+            <input type="range" id="cost-of" name="cost-of" min="0" max="15000" step="100">
+            От 0 до 15000
+          </fieldset>
 
           <fieldset>
             <legend>Сетка:</legend>
@@ -86,13 +85,11 @@
           </button>
         </form>
 
+        <h3>Сортировать:</h3>
           <ul>
-            <li class="filters-item">
-              <h3>Сортировать:</h3>
-              <p class="filters-item-sort">По цене</p>
-              <p class="filters-item-sort">По типу</p>
-              <p class="filters-item-sort">По названию</p>
-            </li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
           </ul>
       </section>
 
