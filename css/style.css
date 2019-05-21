@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  font-weight: 500;
+  text-align: center;
+  line-height: 18 px;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  border: none;
+}
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-green:hover {
+  background-color: #00bc6c;
+}
+
+.button-green:active {
+  background-color: #00aa62;
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+
+.button-yellow:hover {
+  background-color: #eab534;
+}
+
+.button-yellow:active {
+  background-color: #e5a722;
+}
+
+.filter-button {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+  color: #000000; 
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3; 
+}
+
+.catalog-info .button {
+  background-color: #fb565a;
+  color: #ffffff;
+}
+
+.catalog-info .button:hover {
+  background-color: #e74246;
+  color: #ffffff;
+}
+
+.catalog-info .button:active {
+  background-color: #d7373b;
+  color: #ffffff;
+}
+
+.main-navigation {
+  line-height: 30px;
+  font-weight: 500;
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.main-navigation p {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 20px;
+  color: #283136;
+}
+
+.filters-input:disabled + label {
+  color: rgba(40, 49, 54, 0.3);
+  opacity: 0.3;
+}
+
+.cost-of {
+  display:none;
+}
+
+.slider {
+  display: none;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item h3 {
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-info {
+  background-color: #eeeeee;
+}
+
+.catalog-info a {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-info a:hover {
+  color: #fb565a;
+}
+
+.catalog-info a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+.bonus,
+.modal {
+  display: none;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-social p {
+  line-height: 22px;
+  color: #444444; 
+}
+
