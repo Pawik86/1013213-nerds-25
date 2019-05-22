@@ -128,6 +128,16 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider h2 {
+  font-size: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+
 .filters fieldset {
   border: none;
 }
@@ -151,23 +161,70 @@ a {
   opacity: 0.3;
 }
 
-.cost-of {
-  display:none;
-}
-
-.slider {
-  display: none;
-}
-
 .features-list {
   list-style: none;
 }
 
-.feature-item h3 {
+.filters h3 {
   text-transform: uppercase;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+}
+
+.filters-sort a {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.filters-sort a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.filters-sort a:active,
+.filters-sort a:focus {
+  color: #000000;
+}
+
+.benefits b {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #000000;
+}
+
+.benefits h3 {
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.benefits th {
+  font-size: 45px;
+  line-height: 10px;
+  color: #000000
+}
+
+.benefits td {
+  line-height: 18px
+}
+
+.partners ul {
+  list-style: none;
+}
+
+.partners-logo img {
+  opacity: 0.2;
+}
+
+.partners-logo img:hover {
+  opacity: 1;
+}
+
+.partners-logo img:active {
+  opacity: 0.1;
 }
 
 .catalog-list {
@@ -193,6 +250,58 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-size: 13.5px;
+  line-height: 15.5px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+}
+
+.pagination-item a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination-item-current a {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+
+.footer-contacts h2 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-contacts p {
+  line-height: 18px;
+  color: #666666;
+}
 
 .bonus,
 .modal {
